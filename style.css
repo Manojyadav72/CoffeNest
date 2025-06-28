@@ -1,0 +1,544 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fdfaf6;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+#menu img {
+    max-width: 100%;
+    height: 210px;
+    width: 168px;
+    display: block;
+    border-radius: 10px;
+}
+
+.logo{
+    display: flex;  
+}
+.logo img{
+    width: 60px;
+    border-radius: 50%;
+
+}
+.logo-name{
+    margin-top: 15px;
+    color: rgb(230, 216, 216);
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+.bg-green {
+    background-color: #3e2723; 
+}
+.bg-peach {
+    background-color: #d7ccc8; 
+}
+
+.peach-clr {
+    color: #cf7558; 
+    text-align: center;
+    font-weight: 900;
+    font-size: 30%;
+}
+
+.peach-para{
+    color: #7e6f6a; 
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.green-clr {
+    color: #db572b; 
+}
+
+
+.sidespacing {
+    padding: 0 60px;
+}
+
+/* Header */
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+
+.navlist {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    margin-left: 70px;
+}
+
+
+
+.links {
+    color: #e4d8d8;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+.links:hover {
+    color: #d17b5f; /* Light brown hover */
+}
+
+.action-list {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.nav-btn {
+    padding: 0.5rem 1.2rem;
+    background-color: #f9b6a0;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.nav-btn:hover {
+    background-color: #6d4c41;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+
+}
+
+.hero-section h1 {
+    font-size: 8rem;
+    font-weight: bold;
+    flex: 1 1 100%;
+}
+
+.hero-content {
+    flex: 1 1 50%;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.hero-img {
+    height: 400px;
+    width: 400px;
+    align-items: center !important;
+    
+
+}
+
+
+
+
+.working-section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.working-section h2 {
+    margin: 2rem 0 1rem;
+    font-size: 2.2rem;
+}
+
+.img-part {
+    margin-bottom: 2rem;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+}
+
+.card p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.action-btn {
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: #1f4037;
+    display: inline-block;
+}
+
+/* Banner Section */
+.coffee-banner {
+    background-color: #f6f1eb;
+    padding: 3rem 5%;
+    text-align: center;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.text-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Roasting Section */
+.roasting-section {
+    background-color: #f6f1eb;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 5%;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.roast-option {
+    background-color: #fff;
+    padding: 1.2rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+}
+
+.arrow-btn {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #1f4037;
+    cursor: pointer;
+}
+
+
+/* Footer */
+footer {
+    background-color: #4e342e;
+    color: white;
+    padding: 3rem 5%;
+}
+
+#footer-container-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.col-3, .col-9 {
+    flex: 1 1 100%;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footer-links h3,
+footer h3 {
+    color: #cf7558;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.footer-links li:hover {
+    color: #cf7558;
+}
+
+/* Newsletter input and button */
+.subscribe {
+    display: flex;
+    margin-top: 1rem;
+    max-width: 350px;
+}
+
+.subscribe input {
+    flex: 1;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.subscribe button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #cf7558;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe button:hover {
+    background-color: #5d4037;
+}
+
+/* Social Media Icons */
+.footer-social a {
+    color: white;
+    margin-right: 12px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #cf7558;
+}
+
+
+
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .controls button {
+    padding: 5px 10px;
+    font-size: 18px;
+    margin: 0 5px;
+    background-color: #573818;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .controls button:hover {
+    background-color: #3e2812;
+  }
+  
+  .controls .count {
+    font-size: 18px;
+    font-weight: bold;
+    width: 30px;
+    text-align: center;
+  }
+  
+
+
+/* Navbar Responsive */
+.navlist.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 5%;
+    background-color: #3e2723;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    z-index: 999;
+}
+
+.action-list.active {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 5%;
+    background-color: #3e2723;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+/* Resposive */
+
+@media (max-width: 768px) {
+    .navlist {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .action-list {
+        display: none;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .headline {
+        flex-direction: column;
+        animation: none;
+    }
+
+    .working-section {
+        padding: 2rem 1rem;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .coffee-banner {
+        padding: 2rem 1rem;
+    }
+
+    .text-row {
+        flex-direction: column;
+        font-size: 1rem;
+    }
+
+    .roasting-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .roast-option {
+        width: 100%;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .subscribe {
+        flex-direction: column;
+    }
+
+    .subscribe input {
+        border-radius: 5px;
+        margin-bottom: 0.5rem;
+    }
+
+    .subscribe button {
+        border-radius: 5px;
+    }
+
+    #footer-container-row {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+}
+
+
+@media (max-width: 480px) {
+  body {
+    font-size: 90%;
+  }
+
+  .hero-section h1 {
+    font-size: 3rem;
+  }
+
+  .links {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    position: relative;
+}
+
+.hero-img img {
+    display: block;
+    margin: 0 auto; 
+    max-width: 100%; 
+}
+
+.hero-content {
+    max-width: 600px; 
+}
+
+.social-list {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 10px;
+    margin-left: 30px;
+}
